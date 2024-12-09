@@ -1,0 +1,85 @@
+.accordeon-apropos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.collapse-container {
+  width: 100%;
+  max-width: 1023px;
+}
+
+.accordeon-apropos .collapsible {
+  background-color: rgba(255, 96, 96, 1);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.collapsible.active {
+  background-color: rgba(255, 96, 96, 1);
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.collapsible.active .icon {
+  transform: rotate(180deg);
+}
+
+.collapsible .icon {
+  transform: rotate(180deg);
+}
+
+.content {
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.content p {
+  background-color: rgba(246, 246, 246, 0.45);
+  margin-top: 0;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+ .accordeon-pappros {
+  display: flex;
+  justify-content: center;
+}
+
+.accordeon-apropos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 335px;
+  margin: 25px 0;
+}
+
+.accordeon-apropos .collapsible {
+  height: 30px;
+  font-size: 13px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  line-height: 18.54px;
+  text-align: left;
+}
+
+.content p {
+  padding: 10px 20px 20px 20px;
+  font-size: 14px;
+}
+}
